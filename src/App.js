@@ -1,9 +1,12 @@
 import logo from './logo.svg';
-import './App.css';
 import MyButton from './study01/App.js';
+import './App.css';
 import Rsp from './study01/RSPgames';
 import Game from './study01/Game.js';
-import Ui from './study01/ui.js'
+import Home from './study01/Home.js';
+import NBGame from './study01/NBGame.js';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 
 /*function App() {
   return (
@@ -31,11 +34,21 @@ import Ui from './study01/ui.js'
 
 function App(){
   return(
-      <div className="App">
+      <Router>
+        <div>
+          <Routes>
+              <Route path="/" element={<Home />}/>
+              <Route path="/rspGame" element={<Game />}/>
+              <Route path="/numberBaseball" element={<NBGame />}/>
+          </Routes>
+        </div>
+
+      </Router>
+      /*<div className="App">
           <header className="App-header">
               <Ui />
           </header>
-      </div>
+      </div>*/
   )
 }
 
