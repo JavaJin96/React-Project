@@ -5,6 +5,7 @@ import Rsp from './study01/RSPgames';
 import Game from './study01/Game.js';
 import Home from './study01/Home.js';
 import NBGame from './study01/NBGame.js';
+import OddGame from './study01/OddGame.js'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
@@ -40,6 +41,7 @@ function App(){
               <Route path="/" element={<Home />}/>
               <Route path="/rspGame" element={<Game />}/>
               <Route path="/numberBaseball" element={<NBGame />}/>
+              <Route path="/OddGame" element={<OddGame />}/>
           </Routes>
         </div>
 

@@ -9,13 +9,17 @@ function makeMainUi(){
         window.location.href = "/numberBaseball";
     }
 
+    const goOddGame = () => {
+        window.location.href = "/oddGame";
+    }
+
     return(
         <div className='mainDiv'>
           <h1>react로 생성된 웹페이지 입니다.</h1>
           <ul>
               <li><button onClick={goRspGame}>가위 바위 보!</button></li>
               <li><button onClick={goNumBaseBallGame}>숫자야구</button></li>
-              <li><button>기능3</button></li>
+              <li><button onClick={goOddGame}>홀짝게임</button></li>
               <li><button>기능4</button></li>
               <li><button>기능5</button></li>
               <li><button>기능6</button></li>
